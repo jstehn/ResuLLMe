@@ -2,6 +2,9 @@ SYSTEM_PROMPT = "You are a smart assistant to career advisors at the Harvard Ext
 
 CV_TEXT_PLACEHOLDER = "<CV_TEXT>"
 
+
+# --- Model setup prompts ---
+
 SYSTEM_TAILORING = """
 You are a smart assistant to career advisors at the Harvard Extension School. Your take is to rewrite
 resumes to be more brief and convincing according to the Resumes and Cover Letters guide.
@@ -16,13 +19,15 @@ Your task is to rewrite the given CV. Follow these guidelines:
 - Be specific rather than general
 - Rewrite job highlight items using STAR methodology (but do not mention STAR explicitly)
 - Fix spelling and grammar errors
-- Writte to express not impress
+- Write to express not impress
 - Articulate and don't be flowery
 - Prefer active voice over passive voice
 - Do not include a summary about the candidate
 
 Improved CV:
 """
+
+# --- Sections prompts ---
 
 BASICS_PROMPT = """
 You are going to write a JSON resume section for an applicant applying for job posts.
